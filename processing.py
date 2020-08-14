@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import imshow
 
-
 def image_normalisation(image):
   image = cv2.resize(image,(settings.WIDTH,settings.HEIGHT),interpolation = cv2.INTER_AREA)
   image = np.expand_dims(image,axis=0)

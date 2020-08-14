@@ -4,11 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import imshow
 
-image_content= plt.imread('content.jpg')
-plt.imshow(image_content)
-
-image_style= plt.imread('style.jpg')
-plt.imshow(image_style)
 
 def image_normalisation(image):
   image = cv2.resize(image,(settings.WIDTH,settings.HEIGHT),interpolation = cv2.INTER_AREA)
